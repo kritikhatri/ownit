@@ -106,3 +106,7 @@ A time I had code that worked but I couldn't fully explain it was when I was new
 Building OWNIT, the thing that surprised me most was how easily Wispr helped me work on this project.
 
 At Wispr, I would love to be part of the team and make more projects with Wispr.
+
+---
+
+Built by Kritika Khatri for Wispr Flow's "Wispr Your Way" challenge. MIT licensed.
