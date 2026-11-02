@@ -101,7 +101,7 @@ Demo video: coming soon.
 
 ## Why I Built This
 
-A time I had code that worked but I couldn't fully explain it was when I was new to web coding, and I just coded without really thinking about anything.
+When I was new to web development, I wrote code that worked without really understanding why. It ran, so I moved on. OWNIT is the tool I wish I had then: one that asks me to explain my code out loud and shows me exactly where my understanding breaks.
 
 Building OWNIT, the thing that surprised me most was how easily Wispr helped me work on this project.
 
