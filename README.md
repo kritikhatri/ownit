@@ -103,7 +103,7 @@ Demo video: coming soon.
 
 When I was new to web development, I wrote code that worked without really understanding why. It ran, so I moved on. OWNIT is the tool I wish I had then: one that asks me to explain my code out loud and shows me exactly where my understanding breaks.
 
-Building OWNIT, the thing that surprised me most was how easily Wispr helped me work on this project.
+What surprised me most was that explaining my own code out loud, the thing OWNIT tests, was also the best way to build it. Every time I couldn't say what a phase should do, I knew I didn't understand it yet.
 
 At Wispr, I would love to be part of the team and make more projects with Wispr.
 
