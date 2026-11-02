@@ -91,3 +91,10 @@ I built OWNIT by voice. I dictated every prompt to my AI assistant with Wispr Fl
 - The map
 
 Demo video: coming soon.
+
+## What didn't work
+
+- **Dictated answers could get cut off.** Wispr Flow pastes a whole answer at once, so stopping at the first blank line would end it too early. I learned that voice input arrives in bursts, not keystrokes. Now you finish by pressing Enter on an empty line, with a short wait in case more pasted text is coming.
+- **Gemini sometimes failed with overloaded errors or timeouts, and the user lost the answer they had just spoken.** I learned that losing someone's effort is worse than making them wait, so now it tries up to four times before giving up.
+- **A crash while saving could break the scores file and wipe someone's history.** So I save to a temporary file first, then swap it in.
+- **Finding functions without a real parser was harder than expected.** Brackets and keywords inside strings, comments and regexes look like real code. Now the scanner blanks those out before it looks for functions.
