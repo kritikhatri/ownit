@@ -1,6 +1,8 @@
 # OWNIT
 
-Do you really understand the code in your repo? OWNIT picks a random function from it, asks you to explain it, and has Gemini score your answer. It's a command-line tool with no dependencies.
+AI writes more and more of our code. It runs, it ships, and often nobody can explain it. OWNIT checks whether you actually understand your own code, and you answer out loud with Wispr Flow because you can't fake an explanation when you have to say it.
+
+It's a command-line tool with no dependencies: it picks a random function from your repo, asks you to explain it, and has Gemini score your answer.
 
 ```
 ███████████████░░░░░ 75/100
