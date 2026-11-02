@@ -98,3 +98,11 @@ Demo video: coming soon.
 - **Gemini sometimes failed with overloaded errors or timeouts, and the user lost the answer they had just spoken.** I learned that losing someone's effort is worse than making them wait, so now it tries up to four times before giving up.
 - **A crash while saving could break the scores file and wipe someone's history.** So I save to a temporary file first, then swap it in.
 - **Finding functions without a real parser was harder than expected.** Brackets and keywords inside strings, comments and regexes look like real code. Now the scanner blanks those out before it looks for functions.
+
+## Why I Built This
+
+A time I had code that worked but I couldn't fully explain it was when I was new to web coding, and I just coded without really thinking about anything.
+
+Building OWNIT, the thing that surprised me most was how easily Wispr helped me work on this project.
+
+At Wispr, I would love to be part of the team and make more projects with Wispr.
