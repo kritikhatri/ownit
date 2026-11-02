@@ -43,6 +43,7 @@ function listSourceFiles(root = process.cwd()) {
   const output = execFileSync('git', ['ls-files', '-z'], {
     cwd: root,
     encoding: 'utf8',
+    stdio: ['ignore', 'pipe', 'pipe'],
     maxBuffer: 256 * 1024 * 1024,
   });
   return output
