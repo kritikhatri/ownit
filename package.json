@@ -1,15 +1,29 @@
 {
-  "name": "ownit",
+  "name": "ownit-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/extract.js",
+  "description": "Do you really understand your own code? Explain a function out loud and Gemini scores you.",
   "bin": {
     "ownit": "bin/ownit.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kritikhatri/ownit.git"
+  },
+  "keywords": [
+    "cli",
+    "git",
+    "gemini",
+    "wispr-flow",
+    "learning",
+    "code-understanding"
+  ],
+  "author": "Kritika Khatri",
   "license": "MIT"
 }
