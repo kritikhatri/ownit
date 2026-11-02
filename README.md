@@ -105,7 +105,7 @@ When I was new to web development, I wrote code that worked without really under
 
 What surprised me most was that explaining my own code out loud, the thing OWNIT tests, was also the best way to build it. Every time I couldn't say what a phase should do, I knew I didn't understand it yet.
 
-At Wispr, I would love to be part of the team and make more projects with Wispr.
+At Wispr, I'd love to help developers discover voice coding, starting with students and open source contributors like me who are learning to code alongside AI.
 
 ---
 
