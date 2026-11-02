@@ -39,6 +39,8 @@ Run these commands inside any Git repository:
 | `ownit diff` | Asks you to explain your current Git changes |
 | `ownit diff --min 70` | Same, but exits with code 1 if your score is below 70 |
 
+![OWNIT map](map.png)
+
 ### Answering
 
 Type or dictate your answer; pasted answers can span several lines. Press Enter on an empty line to finish. Ctrl-D also finishes, and skips a follow-up without changing your score.
