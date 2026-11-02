@@ -79,3 +79,15 @@ Scores are saved locally in `.git/ownit-scores.json`, without your answers. They
 ## Limitations
 
 Functions are found with a built-in scanner rather than a full parser. Unusual syntax can give wrong line ranges or missed functions, and some forms such as JavaScript methods with quoted names aren't detected. TypeScript isn't supported.
+
+## Built by voice
+
+I built OWNIT by voice. I dictated every prompt to my AI assistant with Wispr Flow, including the ones behind the commits and this README, one phase at a time:
+
+- Finding functions
+- Reading answers
+- Grading with Gemini
+- Follow-ups
+- The map
+
+Demo video: coming soon.
