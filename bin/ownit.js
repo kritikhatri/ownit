@@ -3,6 +3,7 @@
 
 const readline = require('node:readline');
 const { extractAll } = require('../src/extract.js');
+const { gradeAnswer } = require('../src/grade.js');
 
 const PASTE_GAP_MS = 100;
 
@@ -44,7 +45,29 @@ function readAnswer() {
   });
 }
 
+function formatGrade({ score, right, missed, wrong, followUpQuestion }) {
+  const section = (title, items) => [
+    `${title}:`,
+    ...(items.length ? items.map((item) => `  - ${item}`) : ['  (none)']),
+    '',
+  ];
+  return [
+    `Score: ${score}/100`,
+    '',
+    ...section('What you got right', right),
+    ...section('What you missed', missed),
+    ...section('What you got wrong', wrong),
+    `Follow-up question: ${followUpQuestion}`,
+  ].join('\n');
+}
+
 async function main() {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    console.error('ownit: set the GEMINI_API_KEY environment variable first.');
+    return 1;
+  }
+
   let functions;
   try {
     functions = extractAll();
@@ -74,8 +97,20 @@ async function main() {
     console.error('ownit: no answer given.');
     return 1;
   }
-  const words = answer.trim().split(/\s+/).length;
-  console.log(`\nGot your answer (${words} ${words === 1 ? 'word' : 'words'}).`);
+
+  console.log('\nGrading...\n');
+  try {
+    const grade = await gradeAnswer({
+      ...choice,
+      answer,
+      apiKey,
+      model: process.env.GEMINI_MODEL || undefined,
+    });
+    console.log(formatGrade(grade));
+  } catch (error) {
+    console.error(`ownit: ${error.message}`);
+    return 1;
+  }
   return 0;
 }
 
