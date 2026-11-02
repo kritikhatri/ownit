@@ -90,7 +90,9 @@ I built OWNIT by voice. I dictated every prompt to my AI assistant with Wispr Fl
 - Follow-ups
 - The map
 
-Demo video: coming soon.
+## Screen recording
+
+[![Watch the OWNIT screen recording on YouTube](https://img.youtube.com/vi/G5rsHn0-YVU/hqdefault.jpg)](https://youtu.be/G5rsHn0-YVU)
 
 ## What didn't work
 
