@@ -25,10 +25,6 @@ OWNIT picks a random function from your repo, asks you to explain it, and has Ge
 Follow-up: What determines how many times `fn` is called, and what happens if it fails on the final attempt?
 ```
 
-## Demo
-
-[![Watch the OWNIT demo on YouTube](https://img.youtube.com/vi/G5rsHn0-YVU/hqdefault.jpg)](https://youtu.be/G5rsHn0-YVU)
-
 ## Features
 
 - 🎯 **Random quizzes** on real functions from your own JavaScript and Python code
